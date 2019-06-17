@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-// Brand style
+
 // Split each import into a separate chunk (https://router.vuejs.org/guide/advanced/lazy-loading.html).
 const redThemecss = () => import('./lib/css/red-theme')
 const blueThemecss = () => import('./lib/css/blue-theme')

@@ -1,4 +1,5 @@
 module.exports = {
+  // https://cli.vuejs.org/guide/webpack.html#chaining-advanced
   chainWebpack: config => {
     config.module.rule('scss').exclude.add(/\.useable.scss$/)
 
