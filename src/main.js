@@ -3,11 +3,9 @@ import App from './App.vue'
 import router from './router'
 
 // Split each import into a separate chunk (https://router.vuejs.org/guide/advanced/lazy-loading.html).
-const redThemecss = () => import('./lib/css/red-theme')
-const blueThemecss = () => import('./lib/css/blue-theme')
+const redThemecss = () => import('@/scss/red-theme.scss')
+const blueThemecss = () => import('@/scss/blue-theme.scss')
 
-// This means they can be loaded conditionally (https://webpack.js.org/loaders/style-loader/#useable).
-// This feature is enabled in ./vue.config.js > chainWebpack.
 Vue.config.productionTip = false
 switch ('RED') {
   case 'RED': {
